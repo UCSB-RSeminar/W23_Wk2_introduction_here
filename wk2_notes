@@ -1,0 +1,15 @@
+Holy trinity of file naming
+- version number
+- date its created
+- both machine readable and human readable
+
+Jenny Bryan - filenaming for normies
+
+
+
+
+---- Merge Conflicts and Branching ----
+- merge conflict: if file is big and they're not too far apart it'll show you both
+  - otherwise it'll stop and show you both versions and make you deal with it before you can pull and then push
+- make a new branch to indicate that I am working on things, making big changes
+  - 

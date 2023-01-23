@@ -4,6 +4,14 @@ author: "Shane Dewees"
 date: "2023-01-23"
 output: html_document
 ---
+As long as you're working in R studio, for reading and writing, here will work
+
+benefit for switching between macs and pcs and compatibility
+it can maybe handle spaces?
+
+lose tab completion
+
+lee ran into issues inside functions - running source script that was writing a file
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -23,7 +31,7 @@ Lets delete the words column and then save the new csv also using here().
 even_awesomer_data <- awesome_data %>% 
   select(!words)
 
-write.csv(even_awesomer_data, here("data", "even_awesomer_data.csv"))
+write.csv(even_awesomer_data, here("data", "even_awesomer_data.csv")) # to add another sub folder, just another comma ""
 ```
 
 Ta da!
