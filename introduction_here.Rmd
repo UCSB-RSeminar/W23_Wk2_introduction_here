@@ -24,6 +24,15 @@ even_awesomer_data <- awesome_data %>%
   select(!words)
 
 write.csv(even_awesomer_data, here("data", "even_awesomer_data.csv"))
+
+
+
+asdf;lkjhadfs;eafqwio;ades;jklndsaf
+
+
 ```
 
 Ta da!
+
+
+I don't get what this code is doing.
