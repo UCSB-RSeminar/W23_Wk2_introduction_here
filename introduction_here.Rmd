@@ -1,0 +1,29 @@
+---
+title: "Introduction to using here"
+author: "Shane Dewees"
+date: "2023-01-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+Note how here automatically starts in the folder of R project as mentioned above. 
+
+Instead of setting working directory, we can just use the function here inside read.csv. It is super easy, pretty awesome, and makes the code reproducible on other computers. 
+```{r}
+awesome_data <- read.csv(here("awesome_data.csv"))
+awesome_data
+```
+Lets delete the words column and then save the new csv also using here().
+  - we will also see how to reference folders
+```{r}
+even_awesomer_data <- awesome_data %>% 
+  select(!words)
+
+write.csv(even_awesomer_data, here("data", "even_awesomer_data.csv"))
+```
+
+Ta da!
