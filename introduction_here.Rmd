@@ -24,6 +24,14 @@ even_awesomer_data <- awesome_data %>%
   select(!words)
 
 write.csv(even_awesomer_data, here("data", "even_awesomer_data.csv"))
+
+# but where does it put it?
 ```
 
 Ta da!
+
+
+``` {r test}
+
+
+```
